@@ -17,6 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+
   <body>
     <section class="header">
       <nav>
@@ -34,7 +35,7 @@
         <i class="fa fa-bars" onClick="showMenu()"></i>
       </nav>
       <div class="text-box">
-        <h1>Word's Biggest University</h1>
+        <h1>World's Biggest University</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
           atque optio ex in fuga ab illum, <br />
@@ -45,9 +46,46 @@
       </div>
     </section>
 
-    <!-- Javascript for Toggle Menu -->
+    <!------ course ------>
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        doloremque.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermedia</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            consequatur repellat dignissimos illum a itaque distinctio, ipsam
+            suscipit labore neque?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            consequatur repellat dignissimos illum a itaque distinctio, ipsam
+            suscipit labore neque?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            consequatur repellat dignissimos illum a itaque distinctio, ipsam
+            suscipit labore neque?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------ Javascript for Toggle Menu ------>
     <script>
       var navLinks = document.getElementById("navLinks");
+      var visitButton = document.getElementById("visitButton");
       function showMenu() {
         navLinks.style.right = "0";
       }

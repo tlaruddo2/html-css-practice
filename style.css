@@ -198,6 +198,35 @@ h3{
     opacity: 1;
 }
 
+/* --- facilities --- */
+.facilities{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.facilities-col{ 
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p{
+    padding: 0;
+}
+
+.facilities h3{
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
 
 @media(max-width: 700px){
     .text-box h1{

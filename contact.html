@@ -69,11 +69,11 @@
         </div>
 
         <div class="contact-col">
-          <form action="">
-            <input type="text" placeholder="Enter Your Name">
-            <input type="email" placeholder="Enter email address">
-            <input type="text" placeholder="Enter Your subject">
-            <textarea rows="5" placeholder="Message"></textarea>
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Enter Your Name">
+            <input type="email" name="email" placeholder="Enter email address">
+            <input type="text" name="subject" placeholder="Enter Your subject">
+            <textarea rows="5" name="message" placeholder="Message"></textarea>
             <button type="submit" class="hero-btn red-btn">Send Message</button>
           </form>
 
@@ -99,8 +99,9 @@
     </section>
 
 
-    <!------ Javascript for Toggle Menu ------>
+    
     <script>
+      // ---- Javascript for Toggle Menu ----
       let navLinks = document.getElementById("navLinks");
       let visitButton = document.getElementById("visitButton");
       function showMenu() {
@@ -109,6 +110,17 @@
       function hideMenu() {
         navLinks.style.right = "-201px";
       }
+
+      // ---- handle form ----
+      let contactForm = document.getElementById("contactForm");
+      contactForm.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        console.log("name " + contactForm.name.value);
+        console.log("email " + contactForm.email.value);
+        console.log("subject " + contactForm.subject.value);
+        console.log("message " + contactForm.message.value);
+      })
+
     </script>
   </body>
 </html>

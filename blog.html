@@ -117,15 +117,11 @@
       function hideMenu() {
         navLinks.style.right = "-201px";
       }
-      async function subCAllAPI(){
-        let response = await fetch('https://bright-buttercream-bed961.netlify.app/.netlify/functions/api/blog');
-        let data = await response.json()
-        return data;
-      }
       function callAPI(){
         event.preventDefault();
-        let data = subCAllAPI(); 
-        console.log(data);
+        fetch('https://bright-buttercream-bed961.netlify.app/.netlify/functions/api/blog')
+          .then(res => res.json())
+          .then(data => console.log(data))
       }
     </script>
   </body>

@@ -99,6 +99,10 @@ nav .fa{
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /* ---- course ---- */
 .course{ 
